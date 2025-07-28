@@ -1,0 +1,40 @@
+/* Custom CSS for smooth transitions */
+.page {
+    transition: all 0.3s ease;
+}
+
+.page.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+
+.page.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+
+
+.logo-container {
+    padding: 10px 20px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
